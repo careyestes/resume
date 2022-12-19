@@ -1,0 +1,61 @@
+@import '../styles/variables/base.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  flex: 0 0 3rem;
+  display: flex;
+  align-items: center;
+  nav {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 auto;
+    & > a.logo {
+      display: flex;
+      align-items: center;
+      color: var(--foreground-color-dark);
+      & > svg.logo {
+        width: 20px;
+        height: 20px;
+        margin: 0 0.5rem;
+        .cyan {
+          fill:#00F3FF;
+        }
+        .magenta {
+          fill:#EA057E;
+        }
+        .yellow {
+          fill: var(--highlight-color-bright);
+        }
+        .orange {
+          fill:#FF9100;
+        }
+        .green {
+          fill:#05EAC4;
+        }
+      }
+    }
+    
+    & > .linkBar {
+      flex: 1 1 100%;
+    }
+  }
+}
+
+.main {
+  position: relative;
+  flex: 1 1 auto;
+}
+
+.footer {
+  padding: 3rem;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.backToHome {
+  margin: 3rem 0 0;
+}
